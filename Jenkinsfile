@@ -28,11 +28,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            sh "docker stop hello-world-container || true"
-            sh "docker rm hello-world-container || true"
-        }
-    }
 }
