@@ -4,6 +4,9 @@ pipeline {
     environment {
         DOCKER_IMAGE = "hello-world-docker"
     }
+    triggers {
+        githubPush()  
+    }
 
     stages {
         stage('Checkout') {
