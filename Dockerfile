@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy source code
-COPY app.py .
+COPY hello-world-docker.py .
 
 # Install dependencies
 RUN pip install flask
@@ -14,4 +14,4 @@ RUN pip install flask
 EXPOSE 5000
 
 # Run the application
-CMD ["python", "app.py"]
+CMD ["python", "hello-world-docker.py"]
